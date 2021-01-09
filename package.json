@@ -9,7 +9,8 @@
     "server": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "stop": "kill-port 8301 && kill-port 4049 && kill-port 4040"
+    "stop": "kill-port 8301 && kill-port 4049 && kill-port 4040",
+    "deploy": "zip -r bug-template.zip build"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
