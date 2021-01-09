@@ -31,18 +31,20 @@ class App extends React.Component {
         name="env"
         title="Environment"
         placeholder="Specify the environment"
-        size={Dropdown.size.SMALL} 
+        size={Dropdown.size.MEDIUM} 
         options={[{val: 'production', label: 'Production'}, {val: 'demo', label: 'Demo/Sandbox'}, {val: 'dev', label: 'Development'}]}
         required={true}
       />
       <TextField 
         wrapperClassName="field"
         placeholder="Company name"
+        size="md"
         required={true}
       />
       <TextField 
         wrapperClassName="field"
         placeholder="User email"
+        size="md"
         required={true}
       />
       <textarea rows="5" className="input-component field textarea-field" placeholder="Actual behavior/result"/>
