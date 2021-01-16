@@ -75,12 +75,21 @@ class App extends React.Component {
       }
     });
     monday.storage.instance.setItem(this.key, JSON.stringify(payload))
-      .then(res => {
+      .then(() => {
         console.log('Bug Template: saving succeeded');
-        console.log(res);
+        monday.execute('notice', {
+          message: 'Bug is saved successfully',
+          type: 'success',
+          timeout: 10000,
+        });
       })
       .catch((err) => {
         console.warn('Bug Template: saving failed', err);
+        monday.execute('notice', {
+          message: 'Bug save has failed',
+          type: 'error',
+          timeout: 10000,
+        });
         return;
       });
   }
