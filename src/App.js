@@ -38,13 +38,13 @@ class App extends React.Component {
       <TextField 
         wrapperClassName="field"
         placeholder="Company name"
-        size="md"
+        size="s"
         required={true}
       />
       <TextField 
         wrapperClassName="field"
-        placeholder="User email"
-        size="md"
+        placeholder="Customer email"
+        size="s"
         required={true}
       />
       <textarea rows="5" className="input-component field textarea-field" placeholder="Actual behavior/result"/>
