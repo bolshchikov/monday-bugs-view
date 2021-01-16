@@ -37,7 +37,7 @@ class App extends React.Component {
       if (!data) {
         return;
       }
-      this.key = `${data.boardId}+${data.itemId}`;
+      this.key = `${data.boardId}:${data.itemId}`;
     }).then(() => this.readData());
   }
 
